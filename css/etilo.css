@@ -70,11 +70,12 @@ a{
 .barra.sup{
     position: fixed;
     top: 0;
+    height: 5%; /* Altura da barra */
     width: 90%;
     background-color: #333;
     color: white;
     padding: 10px 0;
     text-align: center;
     display: flex;              /* Corrigido */
-    justify-content: flex-end;  /* Alinha à direita */
+    justify-content: flex-end;    /* Corrigido */
 }

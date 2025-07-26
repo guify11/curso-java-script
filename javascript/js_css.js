@@ -1,3 +1,4 @@
+let oi = "olá mundo";
 console.log("js carregado");
 function alterar_texto_h1() {
     console.log("alterar_texto_h1 chamado");
@@ -5,6 +6,7 @@ function alterar_texto_h1() {
     if (resposta) {
         // O utilizador clicou em OK
         let digito = window.prompt("Escreva o texto");
+        
         document.getElementById('h1').textContent = digito;
         console.log("Texto alterado para: " + digito);
     } else {
