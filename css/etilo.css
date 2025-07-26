@@ -1,0 +1,80 @@
+*{
+    text-align: center;
+    padding: 1%;
+}
+body{
+    background-color: rgb(65, 65, 60);
+}
+
+h1{
+    margin: 6%;
+    color: rgb(32, 62, 87);
+    font-size: 88px;
+    border-left: 5px dashed #ff3131;
+    border-top: 5px dashed #384cff;
+    border-right: 5px dashed #a0ff07;
+    border-bottom: 5px dashed #cc00ff;
+    border-radius: 20px;
+    background-color: #7a964d;
+}
+
+h2{
+    color: white;
+}
+
+
+
+p {
+    color: white;
+    margin-bottom: 60px;
+}
+
+a{
+    color: rgb(0, 153, 255);
+}
+
+.center-50{
+    text-align: center;
+    float: left;
+    width: 50%;
+    padding: 15px;
+}
+
+.exemploBack{
+        background-color: gray;
+    background-image:url("../img/pexels-danielabsi-952670.jpg") ;
+    background-size: contain;
+    background-repeat: repeat;
+    min-width: 200px;    /* largura mínima opcional */
+    max-width: 100%;     /* impede que ultrapasse o ecrã */
+    padding: 10px;
+    box-sizing: border-box;
+    word-break: break-word; /* quebra palavras longas */
+}
+
+.botao{
+    margin: 33%;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 5%;
+    text-decoration: none;
+
+}
+
+.botao:hover{
+    background-color: #384cff;
+    text-decoration: underline;
+}
+
+.barra.sup{
+    position: fixed;
+    top: 0;
+    width: 90%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;              /* Corrigido */
+    justify-content: flex-end;  /* Alinha à direita */
+}
