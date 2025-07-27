@@ -41,15 +41,16 @@ a{
 }
 
 .exemploBack{
-        background-color: gray;
+    background-color: gray;
     background-image:url("../img/pexels-danielabsi-952670.jpg") ;
     background-size: contain;
     background-repeat: repeat;
-    min-width: 200px;    /* largura mínima opcional */
-    max-width: 100%;     /* impede que ultrapasse o ecrã */
-    padding: 10px;
+    min-width: 200px;
+    max-width: 100%;
+    padding: 1px;
     box-sizing: border-box;
-    word-break: break-word; /* quebra palavras longas */
+    word-break: break-word;
+    margin-top: 50px; /* Igual à altura da barra */
 }
 
 .botao{
@@ -70,12 +71,11 @@ a{
 .barra.sup{
     position: fixed;
     top: 0;
-    height: 5%; /* Altura da barra */
+    height: 50px; /* Altura fixa em px */
     width: 90%;
     background-color: #333;
     color: white;
-    padding: 10px 0;
     text-align: center;
-    display: flex;              /* Corrigido */
-    justify-content: flex-end;    /* Corrigido */
+    display: flex;
+    justify-content: flex-end;
 }
