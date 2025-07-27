@@ -81,8 +81,10 @@ a{
 
 }
 
-.botao img{
+.logo_img{
+    fill: white;
     display: block;
+    filter: brightness(0) invert(1);
 }
 
 .barra.sup{

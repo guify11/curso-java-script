@@ -1,5 +1,13 @@
 let oi = "olá mundo";
 console.log("js carregado");
+if (localStorage.getItem('username') === null || localStorage.getItem('username') === "") {
+    console.log("Não há utilizador logado.");
+    document.getElementById("login").style.display = "block";
+} else {
+    console.log("Utilizador logado: " + localStorage.getItem('username'));
+    document.getElementById("login").style.display = "none";
+    document.getElementById('paragrafo.login').textContent = "Ola "+ localStorage.getItem('username') + "!";
+}
 function alterar_texto_h1() {
     console.log("alterar_texto_h1 chamado");
     const resposta = window.confirm('prestes a alterar o texto do h1. Continuar?');
@@ -19,6 +27,11 @@ function login() {
     if (resposta) {
         // O utilizador clicou em OK
         let nome_user = window.prompt("Escreva o seu nome de utilizador");
+        if (nome_user === null || nome_user.trim() === "") {
+            console.log("Login cancelado ou nome de utilizador inválido.");
+            return;
+        }
+        localStorage.setItem('username', nome_user);
         document.getElementById("login").style.display = "none";
         console.log("Botãobotao_login(); de login ocultado.");
         window.alert("Bem-vindo, " + nome_user + "!");
