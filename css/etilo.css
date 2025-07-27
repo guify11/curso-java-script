@@ -1,8 +1,26 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-VariableFont_wdth_wght.woff2') format('woff2'),
+         url('fonts/Roboto-VariableFont_wdth_wght.woff') format('woff');
+    font-weight: 100 900; /* Adjust as necessary */
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Italic';
+    src: url('fonts/Roboto-Italic-VariableFont_wdth,wght.woff2') format('woff2'),
+         url('fonts/Roboto-Italic-VariableFont_wdth_wght.woff') format('woff');
+    font-weight: 100 900; /* Adjust as necessary */
+    font-style: italic;
+    font-display: swap;
+}
+
 *{
     text-align: center;
     padding: 1%;
 }
 body{
+    font-family: 'Roboto', sans-serif;
     background-color: rgb(65, 65, 60);
 }
 
@@ -54,14 +72,18 @@ a{
 }
 
 .botao{
-    background-color: gray;
+    background-color: transparent;
     color: white;
-    padding: 10px;
-    border-radius: 5%;
+    padding: 0px;
+    border: none;
     text-decoration: none;
+    cursor: pointer;
 
 }
 
+.botao img{
+    display: block;
+}
 
 .barra.sup{
     position: fixed;
@@ -74,4 +96,15 @@ a{
     display: flex;
     justify-content: flex-end;
     border-radius: 20px;
+}
+
+.logo {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+
+.logo_img {
+    width: 30px;
+    height: 30px;
 }
