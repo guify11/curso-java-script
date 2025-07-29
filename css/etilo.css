@@ -110,3 +110,12 @@ a{
     width: 30px;
     height: 30px;
 }
+
+#paragrafo_login {
+    display: flex;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+    align-items: center;
+    height: 30px;
+}

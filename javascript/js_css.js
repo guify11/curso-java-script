@@ -6,7 +6,8 @@ if (localStorage.getItem('username') === null || localStorage.getItem('username'
 } else {
     console.log("Utilizador logado: " + localStorage.getItem('username'));
     document.getElementById("login").style.display = "none";
-    document.getElementById('paragrafo.login').textContent = "Ola "+ localStorage.getItem('username') + "!";
+    document.getElementById('paragrafo_login').style.display = "block";
+    document.getElementById('paragrafo_login').textContent = "Ola "+ localStorage.getItem('username') + "!";
 }
 function alterar_texto_h1() {
     console.log("alterar_texto_h1 chamado");
@@ -35,7 +36,7 @@ function login() {
         document.getElementById("login").style.display = "none";
         console.log("Botãobotao_login(); de login ocultado.");
         window.alert("Bem-vindo, " + nome_user + "!");
-        document.getElementById('paragrafo.login').textContent = "Ola " + nome_user + "!"
+        document.getElementById('paragrafo_login').textContent = "Ola " + nome_user + "!"
         console.log("Login efetuado com o nome: " + nome_user);
     } else {
         // O utilizador clicou em Cancelar
@@ -49,7 +50,8 @@ function terminar_sesao() {
         // O utilizador clicou em OK
         document.getElementById("login").style.display = "block";
         console.log("Botão de login visível novamente.");
-        document.getElementById('paragrafo.login').textContent = "";
+        document.getElementById('paragrafo_login').textContent = "";
+        localStorage.removeItem('username');
         console.log("Sessão terminada e nome de utilizador removido.");
     } else {
         // O utilizador clicou em Cancelar
