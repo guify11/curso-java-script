@@ -120,31 +120,3 @@ a{
     height: 30px;
 }
 
-.loading {
-  width: 32px;
-  height: 32px;
-  border: 10px solid rgba(0, 0, 0, 0.2);
-  border-radius: 50%;
-  border-top: 10px solid white;
-  animation: spin 2s infinite linear;
-
-  display: block;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.log {
-
-bom
-    border-radius: 5%;
-    background-color: #41413c;
-    
-}    
